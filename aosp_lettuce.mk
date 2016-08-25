@@ -26,6 +26,10 @@ TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
 TARGET_VENDOR_DEVICE_NAME := YUPHORIA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/dt.img:dt.img \
+    $(LOCAL_PATH)/kernel:kernel \
+
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
