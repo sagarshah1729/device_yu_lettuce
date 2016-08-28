@@ -17,7 +17,7 @@ LOCAL_SRC_FILES := \
         QCameraThermalAdapter.cpp \
         wrapper/QualcommCamera.cpp
 
-LOCAL_CFLAGS = -Wall -Wextra -Werror
+LOCAL_CFLAGS = -Wall -Wextra -Werror -Wno-unused-variable -Wno-unused-parameter -Wno-unused-private-field
 LOCAL_CFLAGS += -DDEFAULT_FPS_RANGES
 
 #Debug logs are enabled
