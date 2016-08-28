@@ -64,9 +64,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-BOARD_SEPOLICY_DIRS += \
-    device/yu/lettuce/sepolicy
-
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Tap to wake
